@@ -63,8 +63,8 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>Tourism</b><span style="color: rgb(62, 62, 243)">Agency</span>',
+    'logo_img' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUT-PxLcnxQDrNNwanS-Z5DcKRqSFlJLMuRg&usqp=CAU',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -86,7 +86,7 @@ return [
     'auth_logo' => [
         'enabled' => false,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+            'path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUT-PxLcnxQDrNNwanS-Z5DcKRqSFlJLMuRg&usqp=CAU',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
@@ -109,7 +109,7 @@ return [
     'preloader' => [
         'enabled' => true,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+            'path' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUT-PxLcnxQDrNNwanS-Z5DcKRqSFlJLMuRg&usqp=CAU',
             'alt' => 'AdminLTE Preloader Image',
             'effect' => 'animation__shake',
             'width' => 60,
@@ -130,7 +130,7 @@ return [
     */
 
     'usermenu_enabled' => true,
-    'usermenu_header' => false,
+    'usermenu_header' => true,
     'usermenu_header_class' => 'bg-primary',
     'usermenu_image' => false,
     'usermenu_desc' => false,
@@ -329,59 +329,47 @@ return [
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
-        ],
+
         ['header' => 'labels'],
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
+            'text'       => 'Customers',
+            'icon_color' => 'blue',
+            'url'        => '/customers/all',
         ],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
+            'text'       => 'Admins',
+            'icon_color' => 'blue',
+            'url'        => '/users/all',
         ],
         [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
+            'text'       => 'Bookings',
+            'icon_color' => 'blue',
+            'url'        => '/bookings',
+        ],
+        [
+            'text'       => 'Tickets',
+            'icon_color' => 'blue',
+            'url'        => '/tickets',
+        ],
+        [
+            'text'       => 'Airline Companies',
+            'icon_color' => 'blue',
+            'url'        => '/companies',
+        ],
+        [
+            'text'       => 'Cities',
+            'icon_color' => 'blue',
+            'url'        => '/cities',
+        ],
+        [
+            'text'       => 'Hotels',
+            'icon_color' => 'blue',
+            'url'        => '/hotels',
+        ],
+        [
+            'text'       => 'Rates',
+            'icon_color' => 'blue',
+            'url'        => '/rates',
         ],
     ],
 
